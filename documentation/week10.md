@@ -1,6 +1,7 @@
 # Week 10
 
 ## Summary
+- worked on project report
 - Finalized Decision Trees  and found a good balance by modifying the max_leaf_nodes parameter
 - tried to implement SVM for image dataset 
 
