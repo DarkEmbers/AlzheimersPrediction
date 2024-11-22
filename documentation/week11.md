@@ -1,3 +1,3 @@
 # Week 11
-
-- SVM for Image Dataset using OvR and OvA approaches. Tried to find best parameters and tried different data sizes.
+## Summary
+- SVM for Image Dataset using OvR and OvA approaches. found best parameters and used different data sizes.
