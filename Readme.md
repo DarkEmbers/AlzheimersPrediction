@@ -67,13 +67,21 @@ python pre.py
 ---
 
 ### R4: Baseline Models
-- Implemented baseline machine learning models:
+- Implemented baseline machine learning models on tabular data:
   - **Decision Trees**
   - **Naïve Bayes**
   - **Random Forest**
-- Implemented on tabular dataset
-- input: "MMSE", "M/F", "EDUC", "SES"
-- output: "Demented / "Non-Demented"
+  - **Linear Classifier**
+>- Implemented on tabular dataset
+>- input: "MMSE", "M/F", "EDUC", "SES"
+>- output: "Demented / "Non-Demented"
+>- Implemented baseline machine learning models for tabular dataset:
+- Implemented baseline machine learning models on Image data:
+  - **SVM**
+>- Implemented on tabular dataset
+>- input: "MMSE", "M/F", "EDUC", "SES"
+>- output: "Demented / "Non-Demented"
+>- Implemented baseline machine learning models for tabular dataset:
 
 #### Results:
 | Model           | Accuracy | Precision | Recall | F1 Score |
@@ -81,6 +89,7 @@ python pre.py
 | Decision Trees  | 85.00%   | 88.46%    | 71.87% | 79.31%   |
 | Naïve Bayes     | 87.50%   | 88.60%    | 79.50% | 83.75%   |
 | Random Forest   | 82.63%   | 85.10%    | 72.00% | 78.85%   |
+| SVM (Average)	  | 79.06%   | 77%       | 82.5%  | 79.5%    |
 
 **Code and Results**: Available in the [Baseline Models](https://github.com/DarkEmbers/Dubai_UG-1/tree/main/notebooks/Baseline_models).
 
@@ -88,26 +97,18 @@ python pre.py
 
 ### R5: Neural Networks
 - Developed and trained neural networks:
-  - **Multi-Layer Perceptron (MLP) for tabular dataset**:
+  - **MLP for tabular dataset**:
     - Input: "MMSE", "M/F", "nWBV", "EDUC"
 	- Output: "Demented" / "Non-Demented"
-  - **Multi-Layer Perceptron (MLP) for image dataset**
+  - **MLP for image dataset**
     - Input: Image
 	- Output: "MildDemented" / "ModerateDemented" / "VeryMildDemented" / "NonDemented"
-  - **Convolutional Neural Network (CNN)**
+  - **CNN**
+    - Input: Image
+	- Output: "MildDemented" / "ModerateDemented" / "VeryMildDemented" / "NonDemented"
+  - **LSTM**
     - Input: Image
 	- Output: "MildDemented" / "ModerateDemented" / "VeryMildDemented" / "NonDemented"
 - Performance metrics for the best-performing CNN model:
-
-#### Results:
-| Class               | Recall | Precision | F1-Score |
-|---------------------|--------|-----------|----------|
-| Non-Demented       | 92%    | 94%       | 93%      |
-| Very Mild Demented | 100%   | 99%       | 99%      |
-| Mild Demented      | 85%    | 79%       | 82%      |
-| Moderate Demented  | 77%    | 78%       | 78%      |
-
-<!-- #### Figure:
-![Confusion Matrix](https://github.com/DarkEmbers/Dubai_UG-1/blob/main/results/confusion_matrix.png) -->
 
 **Code and Results**: Available in the [Neural Networks](https://github.com/DarkEmbers/Dubai_UG-1/tree/main/notebooks/Neural%20Networks).
