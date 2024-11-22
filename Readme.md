@@ -38,4 +38,76 @@ License: Open Source
 
 - Perform feature selection on tabular data using chi2, f_classification, and Random Forest methods.
 
-> Run from within notebook: notebooks/
+From project root folder, run:
+```bash
+cd scripts
+python pre.py
+```
+
+## Description of Requirements (R2–R5)
+
+### R2: Data Analysis and Exploration
+- Performed EDA to identify patterns and correlations within the tabular dataset.
+- Data was scaled using `StandardScaler` from `sklearn`
+- Feature selection was performed using:
+  - chi2
+  - f_classification
+  - Random Forest Classifier
+- Applied PCA to reduce dimensionality and visualize feature clusters in a scatterplot.
+- **Results**: Available in the [EDA Script](https://github.com/DarkEmbers/Dubai_UG-1/blob/main/notebooks/alzheimer.ipynb).
+
+---
+
+### R3: Clustering
+- Implemented clustering algorithms on the tabular dataset:
+  - **KMeans**: Used the elbow method to determine optimal clusters
+  - **Expectation Maximization (EM) with Gaussian Mixture Models (GMM)**: Used Bayesian Information Criterion (BIC) and Akaike Information Criterion (AIC) to find optimal number of cluster.
+- **Results**: Available in the [Clustering Script](https://github.com/DarkEmbers/Dubai_UG-1/tree/main/notebooks/Clustering).
+
+---
+
+### R4: Baseline Models
+- Implemented baseline machine learning models:
+  - **Decision Trees**
+  - **Naïve Bayes**
+  - **Random Forest**
+- Implemented on tabular dataset
+- input: "MMSE", "M/F", "EDUC", "SES"
+- output: "Demented / "Non-Demented"
+
+#### Results:
+| Model           | Accuracy | Precision | Recall | F1 Score |
+|-----------------|----------|-----------|--------|----------|
+| Decision Trees  | 85.00%   | 88.46%    | 71.87% | 79.31%   |
+| Naïve Bayes     | 87.50%   | 88.60%    | 79.50% | 83.75%   |
+| Random Forest   | 82.63%   | 85.10%    | 72.00% | 78.85%   |
+
+**Code and Results**: Available in the [Baseline Models](https://github.com/DarkEmbers/Dubai_UG-1/tree/main/notebooks/Baseline_models).
+
+---
+
+### R5: Neural Networks
+- Developed and trained neural networks:
+  - **Multi-Layer Perceptron (MLP) for tabular dataset**:
+    - Input: "MMSE", "M/F", "nWBV", "EDUC"
+	- Output: "Demented" / "Non-Demented"
+  - **Multi-Layer Perceptron (MLP) for image dataset**
+    - Input: Image
+	- Output: "MildDemented" / "ModerateDemented" / "VeryMildDemented" / "NonDemented"
+  - **Convolutional Neural Network (CNN)**
+    - Input: Image
+	- Output: "MildDemented" / "ModerateDemented" / "VeryMildDemented" / "NonDemented"
+- Performance metrics for the best-performing CNN model:
+
+#### Results:
+| Class               | Recall | Precision | F1-Score |
+|---------------------|--------|-----------|----------|
+| Non-Demented       | 92%    | 94%       | 93%      |
+| Very Mild Demented | 100%   | 99%       | 99%      |
+| Mild Demented      | 85%    | 79%       | 82%      |
+| Moderate Demented  | 77%    | 78%       | 78%      |
+
+<!-- #### Figure:
+![Confusion Matrix](https://github.com/DarkEmbers/Dubai_UG-1/blob/main/results/confusion_matrix.png) -->
+
+**Code and Results**: Available in the [Neural Networks](https://github.com/DarkEmbers/Dubai_UG-1/tree/main/notebooks/Neural%20Networks).
