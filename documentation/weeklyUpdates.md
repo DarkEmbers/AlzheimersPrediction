@@ -10,13 +10,13 @@
 ### Week 5:
 - implemented CNN on image data set
 ### Week 7:
-
+- LSTM 
 ### Week 8:
 - Decision Trees
 
 ### Week 9:
 - Polished Decision Trees
-
+- Polished LSTM
 ### Week 10:
 
 ### Week 11:
