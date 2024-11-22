@@ -1,5 +1,9 @@
 .env
-Data/
+# Data/
+*.csv
 *.jpg
 *.gif
 models/
+
+!Data/alzheimer.csv
+!Data/AugmentedAlzheimerDataset/**
