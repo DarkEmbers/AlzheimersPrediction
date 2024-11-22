@@ -1,2 +1,2 @@
-# Week 1
- 
+# Week 7
+ - started implementing LSTM
