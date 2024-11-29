@@ -24,7 +24,7 @@ License: Open Source
 <!-- (Add example data here) -->
 
 ## Image Dataset
-Source: https://www.kaggle.com/datasets/uraninjo/augmented-alzheimer-mri-dataset
+Source: https://www.kaggle.com/datasets/uraninjo/augmented-alzheimer-mri-dataset \
 License: Open Source
 
 <!-- (Add example data here) -->
